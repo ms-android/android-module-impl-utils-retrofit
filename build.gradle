@@ -2,8 +2,12 @@
 buildscript {
     ext.kotlin_version = "1.4.0"
     repositories {
+        mavenLocal()
         google()
         jcenter()
+        maven {
+            url('https://nexus.mhw828.com/repository/maven-releases/')
+        }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.0.1"
@@ -16,8 +20,12 @@ buildscript {
 
 allprojects {
     repositories {
+        mavenLocal()
         google()
         jcenter()
+        maven {
+            url('https://nexus.mhw828.com/repository/maven-releases/')
+        }
     }
 }
 

@@ -47,4 +47,4 @@ dependencies {
 
 }
 
-apply from:"./mavenpublish_local.gradle"
+apply from: "./maven_publish.gradle"
